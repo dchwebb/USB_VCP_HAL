@@ -1,4 +1,4 @@
-#include "usbd_def.h"
+#include "debug.h"
 #include "stm32f4xx.h"
 #include <string>
 #include <sstream>
@@ -42,8 +42,35 @@ std::string HexByte(const uint16_t& v) {
 
 extern "C" {
 void dumpArray() {
+	uartSendStr("Event,Interrupt,Int Data,Endpoint,mRequest,Request,Value,Index,Length,PacketSize,XferBuff0,XferBuff1\n");
+
 	for (int i = 0; i < usbEventNo; ++i) {
-		uartSendStr(IntToString(i) + "," + HexToString(usbEvents[i], false) + "," + HexByte(usbReqs[i].bmRequest) + ", " + HexByte(usbReqs[i].bRequest) + ", " + HexByte(usbReqs[i].wValue) + ", " + HexByte(usbReqs[i].wIndex) + ", " + HexByte(usbReqs[i].wLength) + "\n");
+
+		uartSendStr(IntToString(i) + ","
+				+ HexToString(usbDebug[i].Interrupt, false) + ","
+				+ HexToString(usbDebug[i].IntData, false) + ","
+				+ IntToString(usbDebug[i].endpoint) + ","
+				+ HexByte(usbDebug[i].Request.bmRequest) + ", "
+				+ HexByte(usbDebug[i].Request.bRequest) + ", "
+				+ HexByte(usbDebug[i].Request.wValue) + ", "
+				+ HexByte(usbDebug[i].Request.wIndex) + ", "
+				+ HexByte(usbDebug[i].Request.wLength) + ", "
+				+ HexByte(usbDebug[i].PacketSize) + ", "
+				+ HexToString(usbDebug[i].xferBuff0, false) + ", "
+				+ HexToString(usbDebug[i].xferBuff1, false) + "\n");
 	}
+
+
+
+//	for (int i = 0; i < usbEventNo; ++i) {
+//		uartSendStr(IntToString(i) + "," +
+//				HexToString(usbDebug[i].Interrupt, false) + "," +
+//				HexByte(usbDebug[i].Request.bmRequest) + ", " +
+//				HexByte(usbDebug[i].Request.bRequest) + ", " +
+//				HexByte(usbDebug[i].Request.wValue) + ", " +
+//				HexByte(usbDebug[i].Request.wIndex) + ", " +
+//				HexByte(usbDebug[i].Request.wLength) +
+//				"\n");
+//	}
 }
 }

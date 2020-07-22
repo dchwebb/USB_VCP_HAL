@@ -19,7 +19,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "usbd_core.h"
-
+#include "debug.h"
 /** @addtogroup STM32_USBD_DEVICE_LIBRARY
 * @{
 */
@@ -305,9 +305,9 @@ USBD_StatusTypeDef USBD_LL_SetupStage(USBD_HandleTypeDef *pdev, uint8_t *psetup)
 
 
   //USBD_HandleTypeDef* pd = ((USBD_HandleTypeDef*)hpcd->pData)->request;
-  extern uint16_t usbEventNo;
-  extern struct usb_setup_req usbReqs[300];
-  usbReqs[usbEventNo] = pdev->request;
+  //extern uint16_t usbEventNo;
+  //extern struct usb_setup_req usbReqs[300];
+  usbDebug[usbEventNo].Request = pdev->request;
 if (pdev->request.bmRequest == 0xA1 && usbEventNo > 76) {	// && pdev->request.bRequest == 0x20
 	int stop = 1;
 }

@@ -1,7 +1,5 @@
-
 #include "main.h"
-#include "usb_device.h"
-
+#include "debug.h"
 UART_HandleTypeDef huart3;
 
 
@@ -10,15 +8,10 @@ static void MX_GPIO_Init(void);
 static void MX_USART3_UART_Init(void);
 
 uint16_t usbEventNo;
-uint32_t usbEvents[300];
-struct usbRequest {
-	uint8_t mRequest;
-	uint8_t Request;
-	uint16_t Value;
-	uint16_t Index;
-	uint16_t Length;
-};
-struct usb_setup_req usbReqs[300];
+uint32_t usbEvents[USB_DEBUG_COUNT];
+
+//struct usb_setup_req usbReqs[USB_DEBUG_COUNT];
+struct usbDebugItem usbDebug[USB_DEBUG_COUNT];
 
 
 volatile uint8_t uartCmdPos = 0;
@@ -70,8 +63,8 @@ int main(void)
 	while (1)
 	{
 		if (uartCmdRdy) {
-			uartSendString("Received: ");
-			uartSendString(uartCmd);
+			//uartSendString("Received: ");
+			//uartSendString(uartCmd);
 			dumpArray();
 			uartCmdRdy = 0;
 		}
