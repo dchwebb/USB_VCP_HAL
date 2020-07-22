@@ -306,9 +306,11 @@ USBD_StatusTypeDef USBD_LL_SetupStage(USBD_HandleTypeDef *pdev, uint8_t *psetup)
 
   //USBD_HandleTypeDef* pd = ((USBD_HandleTypeDef*)hpcd->pData)->request;
   extern uint16_t usbEventNo;
-  extern struct usb_setup_req usbReq[300];
-  usbReq[usbEventNo] = pdev->request;
-
+  extern struct usb_setup_req usbReqs[300];
+  usbReqs[usbEventNo] = pdev->request;
+if (pdev->request.bmRequest == 0xA1 && usbEventNo > 76) {	// && pdev->request.bRequest == 0x20
+	int stop = 1;
+}
   pdev->ep0_state = USBD_EP0_SETUP;
 
   pdev->ep0_data_len = pdev->request.wLength;

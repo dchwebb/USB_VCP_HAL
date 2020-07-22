@@ -1106,6 +1106,13 @@ void HAL_PCD_IRQHandler(PCD_HandleTypeDef *hpcd)
     {
       epnum = 0U;
 
+      if (usbEventNo > 10) {
+    	  int susp = 1;
+      }
+      if (usbEvents[usbEventNo - 1] == 0) {
+    	  usbEvents[usbEventNo - 1] = USB_OTG_GINTSTS_OEPINT;
+      }
+
 //      USBD_SetupReqTypedef tempreq = hpcd->pData->request;		//((USBD_HandleTypeDef *)
       //USBD_HandleTypeDef* pd = (USBD_HandleTypeDef*)hpcd->pData;
       //PCD_HandleTypeDef* pd = (PCD_HandleTypeDef*)hpcd->pData;

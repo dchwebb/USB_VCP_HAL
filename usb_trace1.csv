@@ -1,0 +1,320 @@
+Sample,Time,Decoder,Ann Row,Ann Class,Value
+2,83.333 ns,USB packet,Packets,Packet: Invalid,Invalid packet (shorter than 8 bits)
+48019,2.001 ms,USB packet,Packets,Packet: SOF,SOF 341
+72028,3.001 ms,USB packet,Packets,Packet: SOF,SOF 342
+96037,4.002 ms,USB packet,Packets,Packet: SOF,SOF 343
+120046,5.002 ms,USB packet,Packets,Packet: SOF,SOF 344
+120124,5.005 ms,USB packet,Packets,Packet: PRE,PRE
+120164,5.007 ms,USB packet,Packets,Packet: IN,IN ADDR 10 EP 3
+144055,6.002 ms,USB packet,Packets,Packet: SOF,SOF 345
+168064,7.003 ms,USB packet,Packets,Packet: SOF,SOF 346
+192073,8.003 ms,USB packet,Packets,Packet: SOF,SOF 347
+216080,9.003 ms,USB packet,Packets,Packet: SOF,SOF 348
+240090,10.004 ms,USB packet,Packets,Packet: SOF,SOF 349
+264099,11.004 ms,USB packet,Packets,Packet: SOF,SOF 350
+288108,12.004 ms,USB packet,Packets,Packet: SOF,SOF 351
+312116,13.005 ms,USB packet,Packets,Packet: Invalid,Invalid packet (shorter than 32 bits)
+312193,13.008 ms,USB packet,Packets,Packet: PRE,PRE
+312233,13.010 ms,USB packet,Packets,Packet: IN,IN ADDR 10 EP 3
+336125,14.005 ms,USB packet,Packets,Packet: SOF,SOF 353
+360134,15.006 ms,USB packet,Packets,Packet: SOF,SOF 354
+384143,16.006 ms,USB packet,Packets,Packet: SOF,SOF 355
+408152,17.006 ms,USB packet,Packets,Packet: SOF,SOF 356
+432161,18.007 ms,USB packet,Packets,Packet: SOF,SOF 357
+456168,19.007 ms,USB packet,Packets,Packet: SOF,SOF 358
+480178,20.007 ms,USB packet,Packets,Packet: SOF,SOF 359
+504187,21.008 ms,USB packet,Packets,Packet: SOF,SOF 360
+504265,21.011 ms,USB packet,Packets,Packet: Invalid,Invalid packet (shorter than 8 bits)
+504271,21.011 ms,USB packet,Packets,Packet: Invalid,UNKNOWN
+552205,23.009 ms,USB packet,Packets,Packet: SOF,SOF 362
+576214,24.009 ms,USB packet,Packets,Packet: SOF,SOF 363
+600223,25.009 ms,USB packet,Packets,Packet: SOF,SOF 364
+624232,26.010 ms,USB packet,Packets,Packet: SOF,SOF 365
+648239,27.010 ms,USB packet,Packets,Packet: SOF,SOF 366
+672249,28.010 ms,USB packet,Packets,Packet: SOF,SOF 367
+696258,29.011 ms,USB packet,Packets,Packet: SOF,SOF 368
+696334,29.014 ms,USB packet,Packets,Packet: PRE,PRE
+696374,29.016 ms,USB packet,Packets,Packet: IN,IN ADDR 10 EP 3
+720267,30.011 ms,USB packet,Packets,Packet: SOF,SOF 369
+744276,31.012 ms,USB packet,Packets,Packet: SOF,SOF 370
+768285,32.012 ms,USB packet,Packets,Packet: SOF,SOF 371
+792293,33.012 ms,USB packet,Packets,Packet: SOF,SOF 372
+816302,34.013 ms,USB packet,Packets,Packet: SOF,SOF 373
+816379,34.016 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 0 EP 0
+816457,34.019 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 00 01 00 00 40 00 ]
+816663,34.028 ms,USB packet,Packets,Packet: ACK,ACK
+817535,34.064 ms,USB packet,Packets,Packet: IN,IN ADDR 0 EP 0
+817613,34.067 ms,USB packet,Packets,Packet: NAK,NAK
+818639,34.110 ms,USB packet,Packets,Packet: IN,IN ADDR 0 EP 0
+818718,34.113 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 12 01 01 02 02 02 00 40 83 04 40 57 00 02 01 02 03 01 ]
+819088,34.129 ms,USB packet,Packets,Packet: ACK,ACK
+819696,34.154 ms,USB packet,Packets,Packet: OUT,OUT ADDR 0 EP 0
+819774,34.157 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+819852,34.161 ms,USB packet,Packets,Packet: ACK,ACK
+822397,34.267 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 0 EP 0
+822475,34.270 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 00 05 3D 00 00 00 00 00 ]
+822681,34.278 ms,USB packet,Packets,Packet: ACK,ACK
+823303,34.304 ms,USB packet,Packets,Packet: IN,IN ADDR 0 EP 0
+823381,34.308 ms,USB packet,Packets,Packet: NAK,NAK
+824422,34.351 ms,USB packet,Packets,Packet: IN,IN ADDR 0 EP 0
+824500,34.354 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+824582,34.358 ms,USB packet,Packets,Packet: ACK,ACK
+840311,35.013 ms,USB packet,Packets,Packet: SOF,SOF 374
+864320,36.013 ms,USB packet,Packets,Packet: SOF,SOF 375
+888328,37.014 ms,USB packet,Packets,Packet: SOF,SOF 376
+888405,37.017 ms,USB packet,Packets,Packet: PRE,PRE
+888445,37.019 ms,USB packet,Packets,Packet: IN,IN ADDR 10 EP 3
+912337,38.014 ms,USB packet,Packets,Packet: SOF,SOF 377
+936346,39.014 ms,USB packet,Packets,Packet: SOF,SOF 378
+960355,40.015 ms,USB packet,Packets,Packet: SOF,SOF 379
+984364,41.015 ms,USB packet,Packets,Packet: SOF,SOF 380
+1008373,42.016 ms,USB packet,Packets,Packet: SOF,SOF 381
+1032382,43.016 ms,USB packet,Packets,Packet: SOF,SOF 382
+1056391,44.016 ms,USB packet,Packets,Packet: SOF,SOF 383
+1080400,45.017 ms,USB packet,Packets,Packet: SOF,SOF 384
+1080477,45.020 ms,USB packet,Packets,Packet: PRE,PRE
+1080517,45.022 ms,USB packet,Packets,Packet: IN,IN ADDR 10 EP 3
+1081469,45.061 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1081547,45.064 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 00 01 00 00 12 00 ]
+1081754,45.073 ms,USB packet,Packets,Packet: ACK,ACK
+1082552,45.106 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1082630,45.110 ms,USB packet,Packets,Packet: NAK,NAK
+1083198,45.133 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1083277,45.137 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 12 01 01 02 02 02 00 40 83 04 40 57 00 02 01 02 03 01 ]
+1083646,45.152 ms,USB packet,Packets,Packet: ACK,ACK
+1084120,45.172 ms,USB packet,Packets,Packet: OUT,OUT ADDR 61 EP 0
+1084198,45.175 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1084277,45.178 ms,USB packet,Packets,Packet: ACK,ACK
+1104407,46.017 ms,USB packet,Packets,Packet: SOF,SOF 385
+1119737,46.656 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1119815,46.659 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 00 02 00 00 ]
+1119982,46.666 ms,USB packet,Packets,Packet: Invalid,Invalid packet (shorter than 16 bits)
+1120407,46.684 ms,USB packet,Packets,Packet: NAK,NAK
+1121472,46.728 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1121551,46.731 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 09 02 43 00 02 01 00 C0 32 09 04 00 00 01 02 02 01 00 05 24 00 10 01 05 24 01 00 01 04 24 02 02 05 24 06 00 01 07 05 82 03 08 00 10 09 04 01 00 02 0A 00 00 00 07 05 01 02 40 00 00 07 05 81 02 ]
+1122656,46.777 ms,USB packet,Packets,Packet: ACK,ACK
+1122819,46.784 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1122897,46.787 ms,USB packet,Packets,Packet: NAK,NAK
+1123913,46.830 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1123992,46.833 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 40 00 00 ]
+1124121,46.838 ms,USB packet,Packets,Packet: ACK,ACK
+1124829,46.868 ms,USB packet,Packets,Packet: OUT,OUT ADDR 61 EP 0
+1124907,46.871 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1124986,46.874 ms,USB packet,Packets,Packet: ACK,ACK
+1128417,47.017 ms,USB packet,Packets,Packet: SOF,SOF 386
+1128495,47.021 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1128573,47.024 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 00 0F 00 00 FF 00 ]
+1128782,47.033 ms,USB packet,Packets,Packet: ACK,ACK
+1129647,47.069 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1129726,47.072 ms,USB packet,Packets,Packet: NAK,NAK
+1130834,47.118 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1130912,47.121 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 05 0F 0C 00 01 07 10 02 02 00 00 00 ]
+1131186,47.133 ms,USB packet,Packets,Packet: ACK,ACK
+1131810,47.159 ms,USB packet,Packets,Packet: OUT,OUT ADDR 61 EP 0
+1131888,47.162 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1131967,47.165 ms,USB packet,Packets,Packet: ACK,ACK
+1135055,47.294 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1135133,47.297 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 03 03 09 04 FF 00 ]
+1135342,47.306 ms,USB packet,Packets,Packet: ACK,ACK
+1135641,47.318 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1135720,47.322 ms,USB packet,Packets,Packet: NAK,NAK
+1137856,47.411 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1137935,47.414 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 1A 03 33 00 31 00 34 00 44 00 33 00 33 00 36 00 46 00 33 00 34 00 33 00 34 00 ]
+1138432,47.435 ms,USB packet,Packets,Packet: ACK,ACK
+1139315,47.471 ms,USB packet,Packets,Packet: OUT,OUT ADDR 61 EP 0
+1139393,47.475 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1139472,47.478 ms,USB packet,Packets,Packet: ACK,ACK
+1140229,47.510 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1140307,47.513 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 00 03 00 00 FF 00 ]
+1140516,47.522 ms,USB packet,Packets,Packet: ACK,ACK
+1141085,47.545 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1141164,47.549 ms,USB packet,Packets,Packet: NAK,NAK
+1142184,47.591 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1142263,47.594 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 04 03 09 04 ]
+1142408,47.600 ms,USB packet,Packets,Packet: ACK,ACK
+1143100,47.629 ms,USB packet,Packets,Packet: OUT,OUT ADDR 61 EP 0
+1143178,47.632 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1143257,47.636 ms,USB packet,Packets,Packet: ACK,ACK
+1145197,47.717 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1145275,47.720 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 02 03 09 04 FF 00 ]
+1145484,47.729 ms,USB packet,Packets,Packet: ACK,ACK
+1145781,47.741 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1145860,47.744 ms,USB packet,Packets,Packet: NAK,NAK
+1147362,47.807 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1147441,47.810 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 32 03 4D 00 6F 00 75 00 6E 00 74 00 6A 00 6F 00 79 00 20 00 56 00 69 00 72 00 74 00 75 00 61 00 6C 00 20 00 43 00 6F 00 6D 00 50 00 6F 00 72 00 74 00 ]
+1148322,47.847 ms,USB packet,Packets,Packet: ACK,ACK
+1148750,47.865 ms,USB packet,Packets,Packet: OUT,OUT ADDR 61 EP 0
+1148828,47.868 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1148907,47.871 ms,USB packet,Packets,Packet: ACK,ACK
+1152426,48.018 ms,USB packet,Packets,Packet: SOF,SOF 387
+1152504,48.021 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1152582,48.024 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 00 06 00 00 0A 00 ]
+1152789,48.033 ms,USB packet,Packets,Packet: ACK,ACK
+1153620,48.067 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1153699,48.071 ms,USB packet,Packets,Packet: NAK,NAK
+1154788,48.116 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1154867,48.119 ms,USB packet,Packets,Packet: STALL,STALL
+1176435,49.018 ms,USB packet,Packets,Packet: SOF,SOF 388
+1200444,50.019 ms,USB packet,Packets,Packet: SOF,SOF 389
+1212802,50.533 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1212880,50.537 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 00 09 01 00 00 00 00 00 ]
+1213087,50.545 ms,USB packet,Packets,Packet: ACK,ACK
+1213690,50.570 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1213770,50.574 ms,USB packet,Packets,Packet: NAK,NAK
+1214787,50.616 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1214866,50.619 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1214947,50.623 ms,USB packet,Packets,Packet: ACK,ACK
+1224453,51.019 ms,USB packet,Packets,Packet: SOF,SOF 390
+1239336,51.639 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1239414,51.642 ms,USB packet,Packets,Packet: DATA0,DATA0 [ A1 21 00 00 00 00 07 00 ]
+1239621,51.651 ms,USB packet,Packets,Packet: ACK,ACK
+1239926,51.664 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1240005,51.667 ms,USB packet,Packets,Packet: NAK,NAK
+1241029,51.710 ms,USB packet,Packets,Packet: Invalid,IN ADDR 61 EP 0
+1241035,51.710 ms,USB packet,Packets,Packet: Invalid,DATA1 [ 2D 01 2D 01 00 01 2D ]
+1242025,51.751 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1242104,51.754 ms,USB packet,Packets,Packet: ACK,ACK
+1244316,51.846 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1244394,51.850 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 21 22 00 00 00 00 00 00 ]
+1244603,51.858 ms,USB packet,Packets,Packet: ACK,ACK
+1245336,51.889 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1245415,51.892 ms,USB packet,Packets,Packet: NAK,NAK
+1246847,51.952 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1246926,51.955 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1247007,51.959 ms,USB packet,Packets,Packet: ACK,ACK
+1248461,52.019 ms,USB packet,Packets,Packet: SOF,SOF 391
+1252081,52.170 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1252159,52.173 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 21 20 00 00 00 00 07 00 ]
+1252366,52.182 ms,USB packet,Packets,Packet: ACK,ACK
+1252749,52.198 ms,USB packet,Packets,Packet: OUT,OUT ADDR 61 EP 0
+1252827,52.201 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 2D 01 2D 01 00 01 2D ]
+1253018,52.209 ms,USB packet,Packets,Packet: NAK,NAK
+1253811,52.242 ms,USB packet,Packets,Packet: OUT,OUT ADDR 61 EP 0
+1253889,52.245 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 2D 01 2D 01 00 01 2D ]
+1254081,52.253 ms,USB packet,Packets,Packet: ACK,ACK
+1254842,52.285 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1254921,52.288 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1255002,52.292 ms,USB packet,Packets,Packet: ACK,ACK
+1256222,52.343 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1256300,52.346 ms,USB packet,Packets,Packet: DATA0,DATA0 [ A1 21 00 00 00 00 07 00 ]
+1256508,52.354 ms,USB packet,Packets,Packet: ACK,ACK
+1257126,52.380 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1257206,52.384 ms,USB packet,Packets,Packet: NAK,NAK
+1258693,52.446 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1258772,52.449 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 2D 01 2D 01 00 01 2D ]
+1258965,52.457 ms,USB packet,Packets,Packet: ACK,ACK
+1259319,52.472 ms,USB packet,Packets,Packet: OUT,OUT ADDR 61 EP 0
+1259397,52.475 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1259477,52.478 ms,USB packet,Packets,Packet: ACK,ACK
+1272470,53.020 ms,USB packet,Packets,Packet: SOF,SOF 392
+1272548,53.023 ms,USB packet,Packets,Packet: PRE,PRE
+1272588,53.025 ms,USB packet,Packets,Packet: IN,IN ADDR 10 EP 3
+1296479,54.020 ms,USB packet,Packets,Packet: SOF,SOF 393
+1320488,55.020 ms,USB packet,Packets,Packet: SOF,SOF 394
+1344496,56.021 ms,USB packet,Packets,Packet: SOF,SOF 395
+1368505,57.021 ms,USB packet,Packets,Packet: SOF,SOF 396
+1392514,58.021 ms,USB packet,Packets,Packet: SOF,SOF 397
+1416523,59.022 ms,USB packet,Packets,Packet: SOF,SOF 398
+1440532,60.022 ms,USB packet,Packets,Packet: SOF,SOF 399
+1458273,60.761 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1458351,60.765 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 00 06 00 00 0A 00 ]
+1458557,60.773 ms,USB packet,Packets,Packet: ACK,ACK
+1459210,60.800 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1459287,60.804 ms,USB packet,Packets,Packet: NAK,NAK
+1460516,60.855 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1460594,60.858 ms,USB packet,Packets,Packet: STALL,STALL
+1464541,61.023 ms,USB packet,Packets,Packet: SOF,SOF 400
+1464618,61.026 ms,USB packet,Packets,Packet: PRE,PRE
+1464658,61.027 ms,USB packet,Packets,Packet: IN,IN ADDR 10 EP 3
+1488550,62.023 ms,USB packet,Packets,Packet: SOF,SOF 401
+1512559,63.023 ms,USB packet,Packets,Packet: SOF,SOF 402
+1536568,64.024 ms,USB packet,Packets,Packet: SOF,SOF 403
+1560575,65.024 ms,USB packet,Packets,Packet: SOF,SOF 404
+1584585,66.024 ms,USB packet,Packets,Packet: SOF,SOF 405
+1592031,66.335 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1592109,66.338 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 00 03 00 00 FE 01 ]
+1592317,66.347 ms,USB packet,Packets,Packet: ACK,ACK
+1592745,66.364 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1592823,66.368 ms,USB packet,Packets,Packet: NAK,NAK
+1594488,66.437 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1594566,66.440 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 04 03 09 04 ]
+1594712,66.446 ms,USB packet,Packets,Packet: ACK,ACK
+1595186,66.466 ms,USB packet,Packets,Packet: OUT,OUT ADDR 61 EP 0
+1595264,66.469 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1595342,66.473 ms,USB packet,Packets,Packet: ACK,ACK
+1600294,66.679 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1600372,66.682 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 01 03 09 04 FE 01 ]
+1600580,66.691 ms,USB packet,Packets,Packet: ACK,ACK
+1601361,66.723 ms,USB packet,Packets,Packet: Invalid,Invalid packet (shorter than 8 bits)
+1601367,66.724 ms,USB packet,Packets,Packet: Invalid,Invalid packet (shorter than 8 bits)
+1602719,66.780 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 22 03 4D 00 6F 00 75 00 6E 00 74 00 6A 00 6F 00 79 00 20 00 4D 00 6F 00 64 00 75 00 6C 00 61 00 72 00 ]
+1603345,66.806 ms,USB packet,Packets,Packet: ACK,ACK
+1603965,66.832 ms,USB packet,Packets,Packet: Invalid,Invalid packet (shorter than 32 bits)
+1604022,66.834 ms,USB packet,Packets,Packet: Invalid,Invalid packet (shorter than 8 bits)
+1604052,66.836 ms,USB packet,Packets,Packet: Invalid,Invalid packet (shorter than 8 bits)
+1604064,66.836 ms,USB packet,Packets,Packet: Invalid,Invalid packet (shorter than 16 bits)
+1608917,67.038 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1608995,67.041 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 02 03 09 04 FE 01 ]
+1609204,67.050 ms,USB packet,Packets,Packet: ACK,ACK
+1609504,67.063 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1609582,67.066 ms,USB packet,Packets,Packet: NAK,NAK
+1611144,67.131 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1611222,67.134 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 32 03 4D 00 6F 00 75 00 6E 00 74 00 6A 00 6F 00 79 00 20 00 56 00 69 00 72 00 74 00 75 00 61 00 ]
+1611801,67.158 ms,USB packet,Packets,Packet: Invalid,UNKNOWN
+1612633,67.193 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1612711,67.196 ms,USB packet,Packets,Packet: ACK,ACK
+1620954,67.540 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1621032,67.543 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 04 03 09 04 FE 01 ]
+1621240,67.552 ms,USB packet,Packets,Packet: ACK,ACK
+1621538,67.564 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1621616,67.567 ms,USB packet,Packets,Packet: NAK,NAK
+1622624,67.609 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1622703,67.613 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 16 03 43 00 44 00 43 00 20 00 43 00 6F 00 6E 00 66 00 69 00 67 00 ]
+1623137,67.631 ms,USB packet,Packets,Packet: ACK,ACK
+1623349,67.640 ms,USB packet,Packets,Packet: OUT,OUT ADDR 61 EP 0
+1623427,67.643 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1623505,67.646 ms,USB packet,Packets,Packet: ACK,ACK
+1628549,67.856 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1628627,67.859 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 05 03 09 04 FE 01 ]
+1628835,67.868 ms,USB packet,Packets,Packet: ACK,ACK
+1629439,67.893 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1629517,67.897 ms,USB packet,Packets,Packet: NAK,NAK
+1630990,67.958 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1631068,67.961 ms,USB packet,Packets,Packet: DATA1,DATA1 [ 1C 03 43 00 44 00 43 00 20 00 49 00 6E 00 74 00 65 00 72 00 66 00 61 00 63 00 65 00 ]
+1631598,67.983 ms,USB packet,Packets,Packet: ACK,ACK
+1632603,68.025 ms,USB packet,Packets,Packet: SOF,SOF 407
+1632680,68.028 ms,USB packet,Packets,Packet: OUT,OUT ADDR 61 EP 0
+1632758,68.032 ms,USB packet,Packets,Packet: DATA1,DATA1 [ ]
+1632836,68.035 ms,USB packet,Packets,Packet: ACK,ACK
+1637700,68.238 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1637778,68.241 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 06 03 09 04 FE 01 ]
+1637986,68.249 ms,USB packet,Packets,Packet: ACK,ACK
+1638654,68.277 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1638733,68.281 ms,USB packet,Packets,Packet: NAK,NAK
+1640121,68.338 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1640199,68.342 ms,USB packet,Packets,Packet: STALL,STALL
+1648520,68.688 ms,USB packet,Packets,Packet: SETUP,SETUP ADDR 61 EP 0
+1648598,68.692 ms,USB packet,Packets,Packet: DATA0,DATA0 [ 80 06 EE 03 09 04 FE 01 ]
+1648806,68.700 ms,USB packet,Packets,Packet: ACK,ACK
+1649108,68.713 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1649186,68.716 ms,USB packet,Packets,Packet: NAK,NAK
+1650953,68.790 ms,USB packet,Packets,Packet: IN,IN ADDR 61 EP 0
+1651031,68.793 ms,USB packet,Packets,Packet: STALL,STALL
+1656612,69.026 ms,USB packet,Packets,Packet: SOF,SOF 408
+1656689,69.029 ms,USB packet,Packets,Packet: PRE,PRE
+1656729,69.030 ms,USB packet,Packets,Packet: IN,IN ADDR 10 EP 3
+1680621,70.026 ms,USB packet,Packets,Packet: SOF,SOF 409
+1704630,71.026 ms,USB packet,Packets,Packet: SOF,SOF 410
+1728638,72.027 ms,USB packet,Packets,Packet: SOF,SOF 411
+1752647,73.027 ms,USB packet,Packets,Packet: SOF,SOF 412
+1776655,74.027 ms,USB packet,Packets,Packet: SOF,SOF 413
+1800664,75.028 ms,USB packet,Packets,Packet: SOF,SOF 414
+1824673,76.028 ms,USB packet,Packets,Packet: SOF,SOF 415
+1848682,77.028 ms,USB packet,Packets,Packet: SOF,SOF 416
+1848759,77.032 ms,USB packet,Packets,Packet: Invalid,Invalid packet (shorter than 8 bits)
+1848765,77.032 ms,USB packet,Packets,Packet: Invalid,UNKNOWN
+1896700,79.029 ms,USB packet,Packets,Packet: SOF,SOF 418
+1920709,80.030 ms,USB packet,Packets,Packet: SOF,SOF 419
+1944718,81.030 ms,USB packet,Packets,Packet: SOF,SOF 420
+1968727,82.030 ms,USB packet,Packets,Packet: SOF,SOF 421
+1992736,83.031 ms,USB packet,Packets,Packet: SOF,SOF 422

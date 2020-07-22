@@ -59,8 +59,8 @@ USB_VCP_HAL.bin \
 all: USB_VCP_HAL.elf secondary-outputs
 
 # Tool invocations
-USB_VCP_HAL.elf: $(OBJS) $(USER_OBJS) C:\Electronics\USB_VCP\STM32F446ZETX_FLASH.ld
-	arm-none-eabi-g++ -o "USB_VCP_HAL.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Electronics\USB_VCP\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USB_VCP_HAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+USB_VCP_HAL.elf: $(OBJS) $(USER_OBJS) D:\Electronics\USB_VCP_HAL\STM32F446ZETX_FLASH.ld
+	arm-none-eabi-g++ -o "USB_VCP_HAL.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Electronics\USB_VCP_HAL\STM32F446ZETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="USB_VCP_HAL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
