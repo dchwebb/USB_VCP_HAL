@@ -63,8 +63,6 @@ int main(void)
 	while (1)
 	{
 		if (uartCmdRdy) {
-			//uartSendString("Received: ");
-			//uartSendString(uartCmd);
 			dumpArray();
 			uartCmdRdy = 0;
 		}

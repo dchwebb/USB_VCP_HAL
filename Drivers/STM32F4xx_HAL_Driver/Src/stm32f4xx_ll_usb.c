@@ -39,6 +39,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
+#include "debug.h"
 
 /** @addtogroup STM32F4xx_LL_USB_DRIVER
   * @{
@@ -1150,14 +1151,24 @@ HAL_StatusTypeDef  USB_DevDisconnect(USB_OTG_GlobalTypeDef *USBx)
   * @param  USBx  Selected device
   * @retval HAL status
   */
-uint32_t  USB_ReadInterrupts(USB_OTG_GlobalTypeDef *USBx)
+uint32_t  USB_ReadInterrupts(USB_OTG_GlobalTypeDef *USBx, uint32_t interrupt)
 {
-  uint32_t tmpreg;
+//  uint32_t tmpreg;
+//
+//  tmpreg = USBx->GINTSTS;
+//  tmpreg &= USBx->GINTMSK;
 
-  tmpreg = USBx->GINTSTS;
-  tmpreg &= USBx->GINTMSK;
 
-  return tmpreg;
+  	if (((USB_OTG_FS->GINTSTS & USB_OTG_FS->GINTMSK) & interrupt) == interrupt && usbEventNo < USB_DEBUG_COUNT) {
+  		usbEvents[usbEventNo] = USB_OTG_FS->GINTSTS & USB_OTG_FS->GINTMSK;
+  		usbEventNo++;
+  		usbDebug[usbEventNo].Interrupt = USB_OTG_FS->GINTSTS & USB_OTG_FS->GINTMSK;
+  		//usbDebugNo++;
+  	}
+
+  	return ((USB_OTG_FS->GINTSTS & USB_OTG_FS->GINTMSK) & interrupt) == interrupt;
+
+//  return tmpreg;
 }
 
 /**

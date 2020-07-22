@@ -16,3 +16,4 @@ struct usbDebugItem {
 
 extern struct usbDebugItem usbDebug[USB_DEBUG_COUNT];
 extern uint16_t usbEventNo;
+extern uint32_t usbEvents[USB_DEBUG_COUNT];

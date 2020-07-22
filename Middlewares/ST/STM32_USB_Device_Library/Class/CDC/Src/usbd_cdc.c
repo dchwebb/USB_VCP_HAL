@@ -58,7 +58,7 @@ EndBSPDependencies */
 /* Includes ------------------------------------------------------------------*/
 #include "usbd_cdc.h"
 #include "usbd_ctlreq.h"
-
+#include "debug.h"
 
 /** @addtogroup STM32_USB_DEVICE_LIBRARY
   * @{
@@ -591,6 +591,10 @@ static uint8_t USBD_CDC_Setup(USBD_HandleTypeDef *pdev,
         ((USBD_CDC_ItfTypeDef *)pdev->pUserData)->Control(req->bRequest,
                                                           (uint8_t *)hcdc->data,
                                                           req->wLength);
+
+		usbDebug[usbEventNo].PacketSize = req->wLength;
+		usbDebug[usbEventNo].xferBuff0 = hcdc->data[0];
+		usbDebug[usbEventNo].xferBuff1 = hcdc->data[1];
 
           (void)USBD_CtlSendData(pdev, (uint8_t *)hcdc->data, req->wLength);
       }

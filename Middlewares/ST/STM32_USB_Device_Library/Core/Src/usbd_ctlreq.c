@@ -20,7 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "usbd_ctlreq.h"
 #include "usbd_ioreq.h"
-
+#include "debug.h"
 
 /** @addtogroup STM32_USBD_STATE_DEVICE_LIBRARY
   * @{
@@ -566,6 +566,12 @@ static void USBD_GetDescriptor(USBD_HandleTypeDef *pdev, USBD_SetupReqTypedef *r
       if (len != 0U)
       {
         len = MIN(len, req->wLength);
+
+		usbDebug[usbEventNo].PacketSize = len;
+		usbDebug[usbEventNo].xferBuff0 = ((uint32_t*)pbuf)[0];
+		usbDebug[usbEventNo].xferBuff1 = ((uint32_t*)pbuf)[1];
+
+
         (void)USBD_CtlSendData(pdev, pbuf, len);
       }
       else
