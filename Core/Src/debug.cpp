@@ -4,8 +4,6 @@
 #include <sstream>
 #include <iomanip>
 
-extern uint32_t usbEvents[300];
-extern struct usb_setup_req usbReqs[300];
 extern uint16_t usbEventNo;
 
 void uartSendStr(const std::string& s) {

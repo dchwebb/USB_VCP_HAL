@@ -3,7 +3,7 @@
 #include "usbd_def.h"
 
 
-#define USB_DEBUG_COUNT 300
+#define USB_DEBUG_COUNT 400
 struct usbDebugItem {
 	uint32_t Interrupt;
 	uint32_t IntData;
@@ -16,4 +16,4 @@ struct usbDebugItem {
 
 extern struct usbDebugItem usbDebug[USB_DEBUG_COUNT];
 extern uint16_t usbEventNo;
-extern uint32_t usbEvents[USB_DEBUG_COUNT];
+

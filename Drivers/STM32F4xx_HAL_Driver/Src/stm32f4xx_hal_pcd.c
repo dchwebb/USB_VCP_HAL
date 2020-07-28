@@ -1086,6 +1086,7 @@ void HAL_PCD_IRQHandler(PCD_HandleTypeDef *hpcd)
 			{
 				if ((temp & USB_OTG_GRXSTSP_BCNT) != 0U)
 				{
+
 					(void)USB_ReadPacket(USBx, ep->xfer_buff,
 							(uint16_t)((temp & USB_OTG_GRXSTSP_BCNT) >> 4));
 
@@ -1099,6 +1100,7 @@ void HAL_PCD_IRQHandler(PCD_HandleTypeDef *hpcd)
 			}
 			else if (((temp & USB_OTG_GRXSTSP_PKTSTS) >> 17) ==  STS_SETUP_UPDT)
 			{
+
 				(void)USB_ReadPacket(USBx, (uint8_t *)hpcd->Setup, 8U);
 				ep->xfer_count += (temp & USB_OTG_GRXSTSP_BCNT) >> 4;
 
@@ -1108,6 +1110,9 @@ void HAL_PCD_IRQHandler(PCD_HandleTypeDef *hpcd)
 			}
 			else
 			{
+				if (usbEventNo > 270) {
+					int susp = 1;
+				}
 				/* ... */
 			}
 
@@ -1172,7 +1177,9 @@ void HAL_PCD_IRQHandler(PCD_HandleTypeDef *hpcd)
 			ep_intr = USB_ReadDevAllInEpInterrupt(hpcd->Instance);
 
 			epnum = 0U;
-
+			if (usbEventNo > 269) {
+				int susp = 1;
+			}
 			while (ep_intr != 0U)
 			{
 				if ((ep_intr & 0x1U) != 0U) /* In ITR */
@@ -2056,6 +2063,10 @@ static HAL_StatusTypeDef PCD_WriteEmptyTxFifo(PCD_HandleTypeDef *hpcd, uint32_t 
 			len = ep->maxpacket;
 		}
 		len32b = (len + 3U) / 4U;
+
+		usbDebug[usbEventNo].PacketSize = ep->xfer_len;
+		usbDebug[usbEventNo].xferBuff0 = ((uint32_t*)ep->xfer_buff)[0];
+		usbDebug[usbEventNo].xferBuff1 = ((uint32_t*)ep->xfer_buff)[1];
 
 		(void)USB_WritePacket(USBx, ep->xfer_buff, (uint8_t)epnum, (uint16_t)len,
 				(uint8_t)hpcd->Init.dma_enable);

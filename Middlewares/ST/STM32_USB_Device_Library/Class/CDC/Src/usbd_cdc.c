@@ -596,6 +596,9 @@ static uint8_t USBD_CDC_Setup(USBD_HandleTypeDef *pdev,
 		usbDebug[usbEventNo].xferBuff0 = hcdc->data[0];
 		usbDebug[usbEventNo].xferBuff1 = hcdc->data[1];
 
+		if (usbEventNo > 270) {
+			int susp = 1;
+		}
           (void)USBD_CtlSendData(pdev, (uint8_t *)hcdc->data, req->wLength);
       }
       else
