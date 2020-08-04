@@ -6,11 +6,11 @@
 C_SRCS += \
 ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c 
 
-OBJS += \
-./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o 
-
 C_DEPS += \
 ./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.d 
+
+OBJS += \
+./Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -8,15 +8,15 @@ C_SRCS += \
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c \
 ../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c 
 
-OBJS += \
-./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o \
-./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o \
-./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o 
-
 C_DEPS += \
 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.d \
 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.d \
 ./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.d 
+
+OBJS += \
+./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o \
+./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o \
+./Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes

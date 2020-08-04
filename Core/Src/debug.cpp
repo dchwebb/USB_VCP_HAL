@@ -3,7 +3,7 @@
 #include <string>
 #include <sstream>
 #include <iomanip>
-
+#include "usbd_cdc_if.h"
 extern uint16_t usbEventNo;
 
 void uartSendStr(const std::string& s) {
@@ -40,6 +40,8 @@ std::string HexByte(const uint16_t& v) {
 
 extern "C" {
 void dumpArray() {
+	const char* transmit = "01234567890123456789012345678901234567890123456789012345678901234567890123456789\0";
+	CDC_Transmit_FS((uint8_t*)transmit, strlen(transmit));
 	uartSendStr("Event,Interrupt,Int Data,Endpoint,mRequest,Request,Value,Index,Length,PacketSize,XferBuff0,XferBuff1\n");
 
 	for (int i = 0; i < usbEventNo; ++i) {

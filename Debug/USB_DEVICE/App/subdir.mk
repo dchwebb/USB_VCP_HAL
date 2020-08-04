@@ -8,15 +8,15 @@ C_SRCS += \
 ../USB_DEVICE/App/usbd_cdc_if.c \
 ../USB_DEVICE/App/usbd_desc.c 
 
-OBJS += \
-./USB_DEVICE/App/usb_device.o \
-./USB_DEVICE/App/usbd_cdc_if.o \
-./USB_DEVICE/App/usbd_desc.o 
-
 C_DEPS += \
 ./USB_DEVICE/App/usb_device.d \
 ./USB_DEVICE/App/usbd_cdc_if.d \
 ./USB_DEVICE/App/usbd_desc.d 
+
+OBJS += \
+./USB_DEVICE/App/usb_device.o \
+./USB_DEVICE/App/usbd_cdc_if.o \
+./USB_DEVICE/App/usbd_desc.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
