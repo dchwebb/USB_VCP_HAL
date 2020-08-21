@@ -23,6 +23,7 @@
 #include "usbd_core.h"
 #include "usbd_desc.h"
 #include "usbd_conf.h"
+#include "debug.h"
 
 /* USER CODE BEGIN INCLUDE */
 
@@ -150,6 +151,30 @@ USBD_DescriptorsTypeDef FS_Desc =
 #endif /* (USBD_LPM_ENABLED == 1) */
 };
 
+#ifdef MERGEDDESCRIPTORS
+__ALIGN_BEGIN uint8_t USBD_FS_DeviceDesc[USB_LEN_DEV_DESC] __ALIGN_END =
+{
+	0x12,					// bLength
+	USB_DESC_TYPE_DEVICE,	// bDescriptorType
+	0x01,					// bcdUSB  - 0x01 if LPM enabled
+	0x02,
+	0xEF,					// bDeviceClass: (Miscellaneous)
+	0x02,					// bDeviceSubClass (Interface Association Descriptor)
+	0x00,					// bDeviceProtocol
+	64,  					// bMaxPacketSize
+	LOBYTE(USBD_VID),		// idVendor
+	HIBYTE(USBD_VID),		// idVendor
+	LOBYTE(USBD_PID_FS),	// idProduct
+	HIBYTE(USBD_PID_FS),	// idProduct
+	0x00,					// bcdDevice rel. 2.00
+	0x02,
+	USBD_IDX_MFC_STR,		// Index of manufacturer  string
+	USBD_IDX_PRODUCT_STR,	// Index of product string
+	USBD_IDX_SERIAL_STR,	// Index of serial number string
+	1						// bNumConfigurations
+};
+#else
+
 #if defined ( __ICCARM__ ) /* IAR Compiler */
   #pragma data_alignment=4
 #endif /* defined ( __ICCARM__ ) */
@@ -181,6 +206,7 @@ __ALIGN_BEGIN uint8_t USBD_FS_DeviceDesc[USB_LEN_DEV_DESC] __ALIGN_END =
   USBD_IDX_SERIAL_STR,        /*Index of serial number string*/
   USBD_MAX_NUM_CONFIGURATION  /*bNumConfigurations*/
 };
+#endif
 
 /* USB_DeviceDescriptor */
 /** BOS descriptor. */

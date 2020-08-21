@@ -31,5 +31,5 @@ stm32f4xx_hal_pcd.c:1966:19:HAL_PCD_ActivateRemoteWakeup	16	static
 stm32f4xx_hal_pcd.c:1976:19:HAL_PCD_DeActivateRemoteWakeup	16	static
 stm32f4xx_hal_pcd.c:2005:18:HAL_PCD_GetState	16	static
 stm32f4xx_hal_pcd.c:2029:26:PCD_WriteEmptyTxFifo	48	static
-stm32f4xx_hal_pcd.c:2093:26:PCD_EP_OutXfrComplete_int	32	static
-stm32f4xx_hal_pcd.c:2198:26:PCD_EP_OutSetupPacket_int	32	static
+stm32f4xx_hal_pcd.c:2091:26:PCD_EP_OutXfrComplete_int	32	static
+stm32f4xx_hal_pcd.c:2196:26:PCD_EP_OutSetupPacket_int	32	static

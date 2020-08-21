@@ -1,7 +1,7 @@
 #pragma once
 
 #include "usbd_def.h"
-
+//#define MERGEDDESCRIPTORS
 
 #define USB_DEBUG_COUNT 600
 struct usbDebugItem {
