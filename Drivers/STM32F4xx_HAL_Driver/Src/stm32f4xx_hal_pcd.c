@@ -1043,15 +1043,6 @@ void HAL_PCD_IRQHandler(PCD_HandleTypeDef *hpcd)
 	uint32_t i, ep_intr, epint, epnum;
 	uint32_t fifoemptymsk, temp;
 	USB_OTG_EPTypeDef *ep;
-	/*
-
-	extern uint16_t usbEventNo;
-	extern uint32_t usbEvents[300];
-
-	usbEvents[usbEventNo] = USB_OTG_FS->GINTSTS & USB_OTG_FS->GINTMSK;
-	usbDebug[usbEventNo].Interrupt = USB_OTG_FS->GINTSTS & USB_OTG_FS->GINTMSK;
-	usbEventNo++;
-*/
 
 	/* ensure that we are in device mode */
 	if (USB_GetMode(hpcd->Instance) == USB_OTG_MODE_DEVICE)

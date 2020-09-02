@@ -6,11 +6,11 @@
 C_SRCS += \
 ../USB_DEVICE/Target/usbd_conf.c 
 
-C_DEPS += \
-./USB_DEVICE/Target/usbd_conf.d 
-
 OBJS += \
 ./USB_DEVICE/Target/usbd_conf.o 
+
+C_DEPS += \
+./USB_DEVICE/Target/usbd_conf.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

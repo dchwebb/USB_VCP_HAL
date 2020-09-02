@@ -14,14 +14,6 @@ C_SRCS += \
 CPP_SRCS += \
 ../Core/Src/debug.cpp 
 
-C_DEPS += \
-./Core/Src/main.d \
-./Core/Src/stm32f4xx_hal_msp.d \
-./Core/Src/stm32f4xx_it.d \
-./Core/Src/syscalls.d \
-./Core/Src/sysmem.d \
-./Core/Src/system_stm32f4xx.d 
-
 OBJS += \
 ./Core/Src/debug.o \
 ./Core/Src/main.o \
@@ -30,6 +22,14 @@ OBJS += \
 ./Core/Src/syscalls.o \
 ./Core/Src/sysmem.o \
 ./Core/Src/system_stm32f4xx.o 
+
+C_DEPS += \
+./Core/Src/main.d \
+./Core/Src/stm32f4xx_hal_msp.d \
+./Core/Src/stm32f4xx_it.d \
+./Core/Src/syscalls.d \
+./Core/Src/sysmem.d \
+./Core/Src/system_stm32f4xx.d 
 
 CPP_DEPS += \
 ./Core/Src/debug.d 
